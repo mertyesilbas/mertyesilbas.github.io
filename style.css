@@ -1,0 +1,228 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*############################## */
+
+body {
+    background-color: rgb(209, 209, 209);
+    height: 100%;
+    width: 100%;
+}
+
+.main .toolbar {
+    list-style-type: none;
+    box-shadow: 10px 10px #ad0f79;
+    height: 25%;
+    width: 100%;
+    background-color: #C70146;
+    border-radius: 100% 100% 100px 100px;
+    border-style: hidden;
+}
+
+.main .toolbar .titles {
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+
+.main .toolbar .titles a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 150px;
+    text-decoration: none;
+    color: whitesmoke;
+    text-shadow: 3px 3px black;
+}
+
+.main .toolbar .titles a:hover{
+    background-color: black;
+    border-radius: 50px;
+    font-size: 105%;
+}
+
+#timeline {
+    overflow: hidden;
+    width: 100%;
+}
+
+#timeline div {
+    height: 100%;
+}
+
+#timeline div .date {
+    border-right: 1px rgba(179, 175, 175, 0.4) solid;
+    text-align: left
+}
+
+#timeline div .date:before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: #e5e5d1;
+    position: absolute;
+    left: 99.2%;
+    top: 88px;
+    border-radius: 100%;
+    cursor: pointer
+}
+
+#timeline div.active .date::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: #0078FF;
+    position: absolute;
+    left: 98.7%;
+    top: 98px;
+    border-radius: 100%
+}
+
+#timeline div .date h2 {
+    margin: 72px 28px 0;
+    font-size: 45px;
+    font-weight: 600;
+    cursor: pointer
+}
+
+#timeline div.active .date h2 {
+    font-size: 65px;
+    color: #0078FF;
+}
+
+#timeline div .text p {
+    margin: 85px 50px 0;
+    width: 50%;
+    display: none
+}
+
+
+#timeline div.active .text p {
+    display: inherit
+}
