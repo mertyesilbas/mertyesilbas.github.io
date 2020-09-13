@@ -2,7 +2,6 @@ html,
 body,
 div,
 span,
-applet,
 object,
 iframe,
 h1,
@@ -14,11 +13,8 @@ h6,
 p,
 blockquote,
 pre,
-a,
 abbr,
-acronym,
 address,
-big,
 cite,
 code,
 del,
@@ -28,19 +24,14 @@ img,
 ins,
 kbd,
 q,
-s,
 samp,
 small,
-strike,
 strong,
 sub,
 sup,
-tt,
 var,
 b,
-u,
 i,
-center,
 dl,
 dt,
 dd,
@@ -63,16 +54,13 @@ article,
 aside,
 canvas,
 details,
-embed,
-figure,
 figcaption,
+figure,
 footer,
 header,
 hgroup,
 menu,
 nav,
-output,
-ruby,
 section,
 summary,
 time,
@@ -82,12 +70,16 @@ video {
     margin: 0;
     padding: 0;
     border: 0;
+    outline: 0;
     font-size: 100%;
-    font: inherit;
     vertical-align: baseline;
+    background: transparent;
 }
 
-/* HTML5 display-role reset for older browsers */
+body {
+    line-height: 1;
+}
+
 article,
 aside,
 details,
@@ -102,12 +94,7 @@ section {
     display: block;
 }
 
-body {
-    line-height: 1;
-}
-
-ol,
-ul {
+nav ul {
     list-style: none;
 }
 
@@ -124,9 +111,57 @@ q:after {
     content: none;
 }
 
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+input,
+select {
+    vertical-align: middle;
 }
 
 /*############################## */
@@ -135,36 +170,6 @@ body {
     background-color: rgb(209, 209, 209);
     height: 100%;
     width: 100%;
-}
-
-.main .toolbar {
-    list-style-type: none;
-    box-shadow: 10px 10px #ad0f79;
-    height: 25%;
-    width: 100%;
-    background-color: #C70146;
-    border-radius: 100% 100% 100px 100px;
-    border-style: hidden;
-}
-
-.main .toolbar .titles {
-    text-align: center;
-    padding-top: 70px;
-    padding-bottom: 30px;
-}
-
-.main .toolbar .titles a {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-left: 150px;
-    text-decoration: none;
-    color: whitesmoke;
-    text-shadow: 3px 3px black;
-}
-
-.main .toolbar .titles a:hover{
-    background-color: black;
-    border-radius: 50px;
-    font-size: 105%;
 }
 
 #timeline {
@@ -225,4 +230,38 @@ body {
 
 #timeline div.active .text p {
     display: inherit
+}
+
+
+.toolbar {
+    -webkit-box-shadow: 0px 5px 61px 18px #ad0f79;
+    -moz-box-shadow: 0px 5px 61px 18px #ad0f79;
+    box-shadow: 0px 5px 61px 18px #ad0f79;
+    list-style-type: none;
+    /*box-shadow: 10px 10px #ad0f79;*/
+    height: 25%;
+    width: 100%;
+    background-color: #C70146;
+    border-radius: 100% 100% 100px 100px;
+    border-style: hidden;
+}
+
+.toolbar .titles {
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+
+.toolbar .titles a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 150px;
+    text-decoration: none;
+    color: whitesmoke;
+    text-shadow: 3px 3px black;
+}
+
+.toolbar .titles a:hover {
+    background-color: black;
+    border-radius: 50px;
+    font-size: 105%;
 }
