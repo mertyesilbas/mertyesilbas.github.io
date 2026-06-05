@@ -612,6 +612,12 @@ a {
   border-top: 1px solid var(--border);
 }
 
+/* ── Scroll animation ── */
+.visible {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
 /* ── Responsive ── */
 @media (max-width: 768px) {
   .nav-links {

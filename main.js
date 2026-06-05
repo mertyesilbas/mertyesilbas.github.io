@@ -55,9 +55,3 @@ document.querySelectorAll('.skill-card, .project-card, .stat').forEach(el => {
   observer.observe(el);
 });
 
-document.addEventListener('animationend', () => {}, { once: true });
-
-const styleSheet = document.styleSheets[0];
-try {
-  styleSheet.insertRule('.visible { opacity: 1 !important; transform: translateY(0) !important; }', styleSheet.cssRules.length);
-} catch (_) {}
