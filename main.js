@@ -2,10 +2,10 @@ document.getElementById('year').textContent = new Date().getFullYear();
 
 const phrases = [
   'Yazılım Geliştirici',
-  'Flutter Geliştiricisi',
-  'JS / TS Geliştiricisi',
-  'Java Backend Dev',
-  'Açık Kaynak Sevdalısı',
+  'Flutter & Mobil Dev',
+  'Spring Boot Backend Dev',
+  'Node.js / TypeScript Dev',
+  'Full-Stack Geliştirici',
 ];
 
 let phraseIndex = 0;
